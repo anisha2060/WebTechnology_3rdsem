@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Display Types</title>
+        <style>
+            /* div, p{
+                display: inline;
+                color: brown;
+            } */
+
+            div{
+                display: flex;
+                /* flex-direction: row; */
+                flex-wrap: wrap;
+                /* align-items:center; */
+            }
+
+            p{
+                flex-shrink: 1;
+            }
+
+            p:first-child{
+                height: 4rem;
+                width: 100%;
+                flex-shrink: 2;
+                background-color: aqua;
+                flex-grow: 2;   
+            }
+
+            p:nth-child(2){
+                height: 4rem;
+                width: 100%;
+                flex-shrink:3;
+                background-color: aqua;
+                flex-grow: 2;   
+            }
+            p:nth-child(3){
+                height: 4rem;
+                width: 100%;
+                flex-shrink:4;
+                background-color: aqua;
+                flex-grow: 2;   
+            }
+            p:nth-child(4){
+                height: 4rem;
+                width: 100%;
+                flex-shrink:5;
+                background-color: aqua;
+                flex-grow: 2;   
+            }
+            p:nth-child(5){
+                height: 4rem;
+                width: 100%;
+                flex-shrink: 6;
+                background-color: aqua;
+                flex-grow: 2;   
+            }
+            p:nth-child(6){
+                height: 4rem;
+                width: 100%;
+                flex-shrink:7;
+                background-color: aqua;
+                flex-grow: 2;   
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Hello</p>
+            <p>Prashansha</p>
+            <p>Hello</p>
+            <p>Samikshya</p>
+            <p>Hello</p>
+            <p>Anisha</p>
+        </div>
+    </body>
+</html>

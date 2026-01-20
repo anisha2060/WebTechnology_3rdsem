@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grid Example</title>
+        <style>
+            .example-section{
+                display: grid;
+                gap: 0.5rem;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+                grid-template-areas: 
+                "one one"
+                "two four"
+                "five seven"
+                "three six"
+                "eight eight";
+
+            }
+            div{
+                background-color: aquamarine;
+                border: 1px, solid black;
+                padding: 20px;
+                /* width: 50vw; */
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Grid Layout Example</h1>
+        <section class="example-section">
+            <div style="grid-area:one">header</div>
+            <div style="grid-area:two">2</div>
+            <div style="grid-area:three">3</div>
+            <div style="grid-area:four">4</div>
+            <div style="grid-area:five">5</div>
+            <div style="grid-area:six">6</div>
+            <div style="grid-area:seven">7</div>
+            <div style="grid-area:eight">footer</div>
+
+        </section>
+    </body>
+</html>
