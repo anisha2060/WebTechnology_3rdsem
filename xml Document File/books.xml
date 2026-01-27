@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<DOCTYPE Books [
+    <!ELEMENT Books (Book+)>
+    <!ELEMENT Book (Category, Name, Author, Publisher)>
+    <!ELEMENT Category (#PCDATA)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Author (#PCDATA)>
+    <!ELEMENT Publisher (#PCDATA)>
+]>
+
+<Books>
+    <Book>
+        <Category> Web Technology </Category>
+        <Name> Web Technology </Name>
+        <Author> Uttam K. Roy </Author>
+        <Publisher> KEC </Publisher>
+    </Book>
+
+    <Book>
+        <Category> OOP </Category>
+        <Name> Object Oriented Programming </Name>
+        <Author> E. Balagurusamy </Author>
+        <Publisher> McGraw Hill </Publisher>
+    </Book>
+
+    <Book>
+        <Category>Data Structure</Category>
+        <Name>Data Structures Using C</Name>
+        <Author>Reema Thareja</Author>
+        <Publisher>Oxford</Publisher>
+    </Book>
+
+</Books>
+
+<!-- <!ATTLIST College name #Required>
+<!ATTLIST branch id #Required>-->
